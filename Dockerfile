@@ -2,7 +2,7 @@
 
 FROM java:8
 
-ENV PORT 25566
+ENV PORT 25569
 
 # DOWNOAD SHIT
 RUN apt-get clean

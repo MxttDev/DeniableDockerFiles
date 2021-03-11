@@ -17,4 +17,6 @@ echo "eula=true" > eula.txt
 # Setup owner
 chown -R minecraft:minecraft /data
 
-sudo java -DIReallyKnowWhatIAmDoingISwear -Xmx2G -jar server.jar
+java -DIReallyKnowWhatIAmDoingISwear -Xmx2G -jar server.jar nogui
+
+bash
