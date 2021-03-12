@@ -2,7 +2,7 @@
 
 FROM java:8
 
-ENV PORT 25569
+ENV PORT 25570
 
 # DOWNOAD SHIT
 RUN apt-get clean
@@ -11,6 +11,7 @@ RUN apt-get clean
 # SORTS OUT FILES
 COPY spigot.yml /tmp/spigot.yml
 COPY start.sh /start.sh
+COPY server.properties /server.properties
 RUN chmod 755 /start.sh
 
 # USER MANAGEMENT

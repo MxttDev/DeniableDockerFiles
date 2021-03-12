@@ -12,7 +12,13 @@ if [ ! -e /data/spigot.yml ]; then
 	cp /tmp/spigot.yml /data/spigot.yml
 fi
 
+if [ ! -e /data/server.properties ]; then
+	wget -q -O /data/server.properties https://www.dropbox.com/s/4cr2nd1l6236e71/server.properties?dl=1
+fi
+
+# Change server files
 echo "eula=true" > eula.txt
+echo "server-port=$PORT" > server.properties
 
 # Setup owner
 chown -R minecraft:minecraft /data
